@@ -22,6 +22,8 @@ Ports used:
 - (kafka) `localhost:9092` - bootstrap address for the Kafka cluster
 - (grafana) http://localhost:3000 - web address for the Grafana server
 
+Note: To connect to the Docker Compose Kafka container from the Docker Compose Grafana container, use the Docker network name `kafka:9092`
+
 ## Scripts
 
 To build from source:
