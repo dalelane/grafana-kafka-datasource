@@ -4,7 +4,7 @@ set -e
 
 cd "$(dirname "$(realpath "$0")")/.." || exit 1
 
-VERSION=0.0.1
+VERSION=0.0.2
 
 rm -f dalelane-kafka-datasource-$VERSION.zip
 

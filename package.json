@@ -1,6 +1,6 @@
 {
   "name": "dalelane-kafka-datasource",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Grafana data source plugin for visualising data from Kafka topics",
   "scripts": {
     "build": "webpack -c ./.config/webpack/webpack.config.ts --env production",
