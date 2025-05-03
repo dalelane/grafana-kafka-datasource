@@ -38,6 +38,16 @@ func NewClient(cfg SimpleClientConfig) (*Client, error) {
 		"groupid", cfg.GroupId,
 		"authtype", cfg.ScramAuthType)
 
+	if cfg.ClientId == "" {
+		cfg.ClientId = "grafana"
+	}
+	if cfg.GroupId == "" {
+		cfg.GroupId = "grafana"
+	}
+	if cfg.ScramAuthType == "" {
+		cfg.ScramAuthType = "none"
+	}
+
 	config := sarama.NewConfig()
 	config.ClientID = cfg.ClientId
 	if cfg.ScramAuthType != "none" {
