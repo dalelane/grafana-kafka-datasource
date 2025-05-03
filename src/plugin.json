@@ -1,0 +1,44 @@
+{
+  "name": "Kafka data source",
+  "id": "dalelane-kafka-datasource",
+
+  "type": "datasource",
+  "category": "iot",
+  "streaming": true,
+  "metrics": true,
+  "backend": true,
+  "alerting": true,
+
+  "info": {
+    "description": "Consumes events from Kafka topics so that the contents can be visualised in Grafana",
+    "author": {
+      "name": "Dale Lane"
+    },
+    "keywords": ["datasource", "streaming", "kafka", "apachekafka", "JSON"],
+    "logos": {
+      "small": "img/logo.svg",
+      "large": "img/logo.svg"
+    },
+    "links": [],
+    "screenshots": [
+      {
+        "name": "configuring a new data source",
+        "path": "img/config.png"
+      },
+      {
+        "name": "dashboard plotting Kafka events as time series data",
+        "path": "img/dashboard-1.png"
+      }
+    ],
+    "version": "%VERSION%",
+    "updated": "%TODAY%"
+  },
+
+  "executable": "gpx_streaming_kafka",
+  "dependencies": {
+    "grafanaDependency": ">=11.0.0",
+    "plugins": []
+  },
+
+  "$schema": "https://raw.githubusercontent.com/grafana/grafana/main/docs/sources/developers/plugins/plugin.schema.json"
+}
